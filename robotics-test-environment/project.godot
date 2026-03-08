@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="RoboticsTestEnvironment"
+run/main_scene="uid://c3ku4wqn2ywss"
+config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[input]
+
+"move_forward → W"={
+"deadzone": 0.2,
+"events": []
+}
+"move_backward → S"={
+"deadzone": 0.2,
+"events": []
+}
+"move_left → A"={
+"deadzone": 0.2,
+"events": []
+}
+"move_right → D"={
+"deadzone": 0.2,
+"events": []
+}
+"jump → Space"={
+"deadzone": 0.2,
+"events": []
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
